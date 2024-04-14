@@ -17,7 +17,7 @@ function App() {
   if(par===true){
     setstart(false);
     console.log(
-      "automate function run"
+      "automate function run",start
         )
     
       if ('speechSynthesis' in window) {
@@ -27,7 +27,7 @@ function App() {
           hours=hours-12;
         }
         const minutes = date.getMinutes();
-      var timeformate= "hello vardaan abi time hua hai " + hours +"baj k " + minutes+ "minute";
+      var timeformate= "hello ji abi time hua hai " + hours +"baj k " + minutes+ "minute";
      
       var utterance = new SpeechSynthesisUtterance(timeformate);
       utterance.rate = 0.8;
@@ -58,7 +58,7 @@ function App() {
       const minutes = date.getMinutes();
     // Create a new SpeechSynthesisUtterance object with the text to be spoken
     
-    var timeformate= "hello vardaan abi time hua hai " + hours +"baj k " + minutes+ "minute";
+    var timeformate= "hello ji  abi time hua hai " + hours +"baj k " + minutes+ "minute";
     console.log(date);
     var utterance = new SpeechSynthesisUtterance(timeformate);
     utterance.rate = 0.8;
