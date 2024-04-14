@@ -14,7 +14,7 @@ function App() {
   }, []);
  
   const handleclick=()=>{
-    if(btnclr=='blue')
+    if(btnclr==='blue')
    {
     setbtnclr('red');
    }
