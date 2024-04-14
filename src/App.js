@@ -1,7 +1,7 @@
 import { useState ,useEffect} from "react";
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const [btnclr,setbtnclr]=useState('blue')
+  const [btnclr,setbtnclr]=useState('gray')
 
   useEffect(() => {
     // Update the current time every second
@@ -14,12 +14,12 @@ function App() {
   }, []);
  
   const handleclick=()=>{
-    if(btnclr==='blue')
+    if(btnclr==='gray')
    {
     setbtnclr('red');
    }
    else
-   setbtnclr('blue');
+   setbtnclr('gray');
     console.log("onclick is call ")
     if ('speechSynthesis' in window) {
       var date =new Date();
