@@ -45,7 +45,7 @@ function App() {
         {currentTime.toLocaleTimeString()}
         <div>
           <br></br>
-          <button onClick={handleclick} style={{width:'2cm', cursor:'pointer',height:'1.5cm',fontSize:'15px' ,border:'solid green 6px', borderRadius:'10px' , backgroundColor:'yellow' ,color:btnclr}} > SPEAK</button> 
+          <button onClick={handleclick} style={{width:'2cm', cursor:'pointer',height:'1.5cm',fontSize:'15px' ,border:'solid green 6px', borderRadius:'10px' , backgroundColor:btnclr ,color:'blue'}} > SPEAK</button> 
         </div>
       </div>
     </div>
