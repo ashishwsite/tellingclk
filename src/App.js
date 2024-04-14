@@ -27,10 +27,10 @@ function App() {
       const minutes = date.getMinutes();
     // Create a new SpeechSynthesisUtterance object with the text to be spoken
     
-    var timeformate= "hello vardaan abi time hua hai " + hours +"baj k " + minutes+ "minutes ";
+    var timeformate= "hello vardaan abi time hua hai " + hours +"baj k " + minutes+ "minute";
     console.log(date);
     var utterance = new SpeechSynthesisUtterance(timeformate);
-    utterance.rate = 0.7;
+    utterance.rate = 0.8;
     utterance.lang = 'hi-IN';
     // Use the speechSynthesis object to speak the utterance
     window.speechSynthesis.speak(utterance);
