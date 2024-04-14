@@ -1,6 +1,7 @@
 import { useState ,useEffect} from "react";
 function App() {
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [btnclr,setbtnclr]=useState('blue')
 
   useEffect(() => {
     // Update the current time every second
@@ -13,6 +14,12 @@ function App() {
   }, []);
  
   const handleclick=()=>{
+    if(btnclr=='blue')
+   {
+    setbtnclr('red');
+   }
+   else
+   setbtnclr('blue');
     console.log("onclick is call ")
     if ('speechSynthesis' in window) {
       var date =new Date();
@@ -38,7 +45,7 @@ function App() {
         {currentTime.toLocaleTimeString()}
         <div>
           <br></br>
-          <button onClick={handleclick} style={{width:'2cm', cursor:'pointer',height:'1.5cm',fontSize:'15px' ,border:'solid green 6px', borderRadius:'10px' , backgroundColor:'yellow' ,color:'blue'}} > SPEAK</button> 
+          <button onClick={handleclick} style={{width:'2cm', cursor:'pointer',height:'1.5cm',fontSize:'15px' ,border:'solid green 6px', borderRadius:'10px' , backgroundColor:'yellow' ,color:btnclr}} > SPEAK</button> 
         </div>
       </div>
     </div>
